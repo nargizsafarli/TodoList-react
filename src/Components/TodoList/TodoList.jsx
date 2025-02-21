@@ -39,16 +39,16 @@ function TodoList({ todo, deleteTodo, updateTodo, searchText }) {
             )}
 
             {editTodoId === el.id ? (
-              <CheckOutlined onClick={() => saveEdit(el.id)} />
+              <CheckOutlined onClick={() => saveEdit(el.id)} style={{color:"white"}} />
             ) : (
-              <EditOutlined onClick={() => startEdit(el.id, el.text)} />
+              <EditOutlined onClick={() => startEdit(el.id, el.text)} style={{color:"white"}} />
             )}
 
-            <CloseOutlined onClick={() => deleteTodo(el.id)} />
+            <CloseOutlined onClick={() => deleteTodo(el.id)} style={{color:"white"}} />
           </div>
         ))
       ) : searchText ? (
-        <p>Axtarışa uyğun nəticə tapılmadı.</p>
+        <p className="text">Axtarişa uyğun nəticə tapilmadi.</p>
       ) : null}
     </div>
   );

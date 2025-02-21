@@ -12,3 +12,11 @@
        font-size: 16px;
     }
 }
+.form-container{
+    color: aliceblue;
+
+    h1{
+        margin-left: 32px;
+        margin-bottom: 20px;
+    }
+}

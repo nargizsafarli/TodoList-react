@@ -5,13 +5,14 @@ const { Search } = Input;
 
 function SearchTodo({ searchText, setSearchText }) {
   return (
-    <div>
+    <div >
       <Space direction="vertical">
         <Search
           placeholder="input search text"
           enterButton
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
+          style={{height:"40px",width:"410px"}}
         />
       </Space>
     </div>

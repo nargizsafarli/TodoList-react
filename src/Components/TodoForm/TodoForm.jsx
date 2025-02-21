@@ -16,9 +16,10 @@ function TodoForm({ createTodo }) {
     setNewTodo("");
   };
   return (
-    <div>
+    <div className="form-container">
       <Space direction="vertical">
-        <div className="FormTodo">
+      <h1>Create your own todo list</h1>
+        <div className="FormTodo"> 
           <Input
             placeholder="Yeni todo əlavə et..."
             value={newTodo}
