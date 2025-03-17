@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
    
       const savedTodos = JSON.parse(localStorage.getItem("todos"));
-       setTodo(savedTodos)
+       setTodo(savedTodos || [])
   }, []);
 
   const createTodo = (newTodo) => {
